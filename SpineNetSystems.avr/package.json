@@ -1,0 +1,70 @@
+{
+	"name": "R-RPG",
+	"description": "RPG syntax support",
+	"version": "0.1.0",
+	"publisher": "SpineNet Systems",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"icon": "images/RPG.png",
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "AVR",
+				"aliases": [
+					"avr",
+					"vr"
+				],
+				"extensions": [
+					".vr"
+				],
+				"configuration": "./vr.configuration.json"
+			},
+			{
+				"id": "rpg",
+				"aliases": [
+					"RPG",
+					"rpg"
+				],
+				"extensions": [
+					".rpg",
+					".aspx",
+					".asmx",
+					".rpgle",
+					".sqlrpgle"
+				],
+				"configuration": "./rpg.configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "AVR",
+				"scopeName": "source.vr",
+				"path": "./syntaxes/visualrpg.tmLanguage"
+			},
+			{
+				"language": "rpg",
+				"scopeName": "source.rpg",
+				"path": "./syntaxes/rpg.tmLanguage"
+			}
+		],
+		"snippets": [
+			{
+				"language": "AVR",
+				"path": "./snippets/AVRCodeCompleation.json"
+			},
+			{
+				"language": "rpg",
+				"path": "./snippets/CodeCompleation.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "61a10db7-1758-49a0-9e05-76ac56936b19",
+		"publisherId": "4778d9f4-c2a6-4e40-8d40-cf8ae7639440",
+		"publisherDisplayName": "SpineNet Systems"
+	}
+}

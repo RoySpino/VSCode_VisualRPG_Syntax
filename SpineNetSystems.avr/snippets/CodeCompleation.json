@@ -1,0 +1,134 @@
+{
+	"cformat": {
+        "prefix": "cformat",
+        "body": ["/*",
+		         "\n",
+				 "CL0N01Factor1+++++++Opcode&ExtFactor2+++++++Result++++++++Len++D+HiLoEq */"],
+        "description": "Write a verbose format line for C spec",
+		"scope": "source.RPG"
+    },
+	"dformat":{
+		"prefix":"dformat",
+		"body":["/*\n",
+		    	 "DName+++++++++++ETDsFrom+++To/L+++IDc.Keywords+++++++++++++++++++++++++ */"],
+		"description": "Write a format line for D spec",
+		"scope": "source.RPG"
+	},
+	"dformat-verbose":{
+		"prefix":"dformat",
+		"body":["/*",
+		         " s: S= standalone variable\n",
+				 " L+++: number char/decimal in variable\n",
+				 " I: variable type ",
+				 " C.:  number of decimal digets",
+		         "\n",
+		    	 "DName+++++++++++ETDsFrom+++To/L+++IDc.Keywords+++++++++++++++++++++++++ */"],
+		"description": "Write a verbose format line for D spec",
+		"scope": "source.RPG"
+	},
+	"do": {
+        "prefix": "do",
+        "body": ["Do fromVal toVal indexVal;\n\n\t// loop body\n\nEnddo;"],
+        "description": "Add a loop to a Free rpg project ",
+		"scope": "source.RPG"
+    },
+	"dow": {
+        "prefix": "dow",
+        "body": ["Dow (1 = 1);\n\n\t// loop body\n\tleave\n\nEnddo;"],
+        "description": "Add a do wile loop to a Free rpg project ",
+		"scope": "source.RPG"
+    },
+	"fformat":{
+		"prefix":"fformat",
+		"body":["/*\n",
+		    	 "FFilename++IPEASF.....L.....A.Device+.Keywords+++++++++++++++++++++++++ */"],
+		"description": "Write a format line for F spec",
+		"scope": "source.RPG"
+	},
+	"fformat-verbose":{
+		"prefix":"fformat",
+		"body":["/*",
+		         " I:  I= INPUT, O=OUTPUT, U=UPDATE, C=COMBINED\n",
+		         " P:  P=PRIMARY,S=SECONDARY,F=FULL PROCEDURAL\n",
+				 " A:  A=update file\n",
+				 " F:  E=externally described\n",
+				 " K:  K if the file is a keyed, blank for sequential access\n",
+				 " Defice: DISK, PRINTER or WORKSTN\n",
+				 " \n",
+		    	 "FFilename++IPEASF.....L.....A.Device+.Keywords+++++++++++++++++++++++++ */"],
+		"description": "Write a verbose format line for F spec",
+		"scope": "source.RPG"
+	},
+	"for": {
+        "prefix": "for",
+        "body": ["For index To limit;\n\n\t// loop body\n\nEndFor;"],
+        "description": "Add a for loop to a free rpg project ",
+		"scope": "source.RPG"
+    },
+	"hformat":{
+		"prefix":"hformat",
+		"body":["/*",
+		         "\n",
+		    	 "HKeywords++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */"],
+		"description": "Write a verbose format line for F spec",
+		"scope": "source.RPG"
+	},
+	"if": {
+        "prefix": "if",
+        "body": ["If 1 = 1;\n\n\t// when true do this\n\nEndif;"],
+        "description": "Add a if block to a free rpg project ",
+		"scope": "source.RPG"
+    },
+	"if/else": {
+        "prefix": "if",
+        "body": ["If 1 = 1;\n\n\t// when true do this\n\nElse;\n\n\t// otherwise do this\n\nEndif;"],
+        "description": "Add a If Else Block to a free rpg project ",
+		"scope": "source.RPG"
+    },
+	"Iformat":{
+		"prefix":"Iformat",
+		"body":["/*",
+		         "\n",
+		    	 "IFilename++SqNORiPos1+NCCPos2+NCCPos3+NCC.............................. */"],
+		"description": "Write a format line for I spec",
+		"scope": "source.RPG"
+	},
+	"Iformat-verbose":{
+		"prefix":"Iformat",
+		"body":["/*",
+		         " Ri: rec id indicator 0-99,l1-l9,lr,h1-h9,u1-u8,rt\n",
+		         "\n",
+		    	 "IFilename++SqNORiPos1+NCCPos2+NCCPos3+NCC.............................. */"],
+		"description": "Write a verbose format line for I spec",
+		"scope": "source.RPG"
+	},
+	"oformat":{
+		"prefix":"oformat",
+		"body":["/*\n",
+		    	 "O..............N01N02N03Field+++++++++YB.End++PConstant/editword/DTform */"],
+		"description": "Write a format line for O spec",
+		"scope": "source.RPG"
+	},
+	"pformat":{
+		"prefix":"pformat",
+		"body":["/*",
+		         "  T: B=begin, E=end\n",
+				 "  L+++IDc: return value (only on B lines)\n",
+		         "\n",
+		    	 "PName+++++++++++..T...........L+++IDc.Keywords+++++++++++++++++++++++++ */"],
+		"description": "Write a verbose format line for P spec",
+		"scope": "source.RPG"
+	},
+	"select": {
+        "prefix": "select",
+        "body": ["Select;\n\tWhen 1 = 1;\n\t// if 1 = 1 do this\n\tOther;\n\t// when 1 is not equal to 1 do this\n\nEndSl;"],
+        "description": "Add a select (switch) block to free rpg project ",
+		"scope": "source.RPG"
+    },
+	"monitor": {
+        "prefix": "mon",
+        "body": ["Monitor;\n\n\t// Code to execute\n\nOn-Error;\n\n\t// Code to execute on error\n\nEndMon;"],
+        "description": "Add a try catch block to a  rpg project ",
+		"scope": "source.RPG"
+    }
+}
