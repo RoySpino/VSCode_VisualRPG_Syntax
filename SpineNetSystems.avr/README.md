@@ -8,5 +8,10 @@ Quick viewing and editing of RPG source code without being limited to a 5250 edi
 
 
 ## What does it look like?
+ASNA Visual RPG
  ![pi.cbl](https://github.com/RoySpino/VSCode_VisualRPG_Syntax/blob/master/AVRSample.png)
-
+ 
+IBM RPG Freeform
+ ![pi.cbl](https://github.com/RoySpino/VSCode_VisualRPG_Syntax/blob/master/RPGFreeFormatSample.png)
+IBM RPGLE (Structured)
+ ![pi.cbl](https://github.com/RoySpino/VSCode_VisualRPG_Syntax/blob/master/RPGFixedFormatSample.png)
