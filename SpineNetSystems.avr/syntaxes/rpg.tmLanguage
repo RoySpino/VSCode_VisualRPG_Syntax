@@ -117,7 +117,7 @@
 			<key>comment</key>
 			<string>highlight function key indicatiors</string>
 			<key>match</key>
-			<string>(?i)[*](inka|inkb|inkc|inkd|inke|inkf|inkg|inkh|inki|inkj|inkk|inkl)\b</string>
+			<string>(?i)[*](inka|inkb|inkc|inkd|inke|inkf|inkg|inkh|inki|inkj|inkk|inkl| inkm|inkn|inko|inkp|inkq|inkr|inks|inkt|inku|inkv|inkw|inkx)\b</string>
 			<key>name</key>
 			<string>constant.language.rpg</string>
 		</dict>
