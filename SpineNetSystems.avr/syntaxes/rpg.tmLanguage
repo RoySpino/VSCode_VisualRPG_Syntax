@@ -77,7 +77,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(acq|add|adddur|alloc|addeq|addge|addgt|addle|addlt|addne|and|begsr|cab|cabeq|cabge|cabgt|cable|cablt|cabne|call|callb|callp|cas|case|caseq|casge|casgt|casle|caslt|casne|cat|chain|check|checkr|clear|close|commit|comp|dealloc|define|delete|div|dsply|dump|endcs|eval|evalr|except|exfmt|exsr|extrct|feod|force|goto|in|iter|kfld|klist|leave|leavesr|lookup|mhhzo|mhlzo|mlhzo|mllzo|move|move(p)|movea|movel|movel(p)|mult|mvr|next|not|occur|on|on-error|open|or|oreq|orge|orgt|orle|orlt|orne|other|out|parm|plist|post|read|readc|reade|readp|readpe|realloc|rel|reset|return|rolbk|scan|setgt|setll|setoff|seton|shtdn|sorta|sqrt|sub|subdur|tag|test|testb|testn|testz|time|unlock|update|write|xfoot|xlate|z-add|z-sub)\b</string>
+			<string>(?i)\b(acq|add|adddur|alloc|addeq|addge|addgt|addle|addlt|addne|and|begsr|cab|cabeq|cabge|cabgt|cable|cablt|cabne|call|callb|callp|cas|case|caseq|casge|casgt|casle|caslt|casne|cat|chain|check|checkr|clear|close|commit|comp|dealloc|define|delete|div|dsply|dump|endcs|eval|evalr|except|exfmt|exsr|extrct|feod|force|goto|in|iter|kfld|klist|leave|leavesr|lookup|mhhzo|mhlzo|mlhzo|mllzo|move|move(p)|movea|movel|movel(p)|mult|mvr|next|not|occur|on|on-error|open|or|oreq|orge|orgt|orle|orlt|orne|other|out|parm|plist|post|read|readc|reade|readp|readpe|realloc|rel|reset|return|rolbk|scan|setgt|setll|setoff|seton|shtdn|sorta|sqrt|sub|subdur|tag|test|testb|testn|testz|time|to|unlock|update|write|xfoot|xlate|z-add|z-sub)\b</string>
 			<key>name</key>
 			<string>variable.rpg</string>
 		</dict>
