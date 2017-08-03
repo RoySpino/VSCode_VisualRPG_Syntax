@@ -65,13 +65,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(when|exsr|else|elseif|other)\b</string>
+			<string>(?i)\b(when|exsr|else|other)\b</string>
 			<key>name</key>
 			<string>keyword.control.rpg</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)[\%](abs|addr|alloc|bitand|bitnot|bitor|bitxor|char|check|checkr|date|days|dec|dech|decpos|diff|div|editc|editflt|editw|elem|eof|equal|error|fields|float|found|graph|hours|int|inth|kds|len|lookup|minutes|months|mseconds|nullind|occur|open|paddr|paddr|parms|realloc|rem|replace|subst|scan|seconds|shtdn|size|sqrt|status|str|str|str|subdt|this|time|timestamp|tlookup|trim|triml|trimr|ucs2|uns|unsh|xfoot|xlate|years)\b</string>
+			<string>(?i)[\%](abs|addr|alloc|bitand|bitnot|bitor|bitxor|char|check|checkr|date|days|dec|dech|decpos|diff|div|editc|editflt|editw|elem|eof|equal|error|fields|float|found|graph|hours|int|inth|kds|len|lookup|minutes|months|mseconds|nullind|occur|open|paddr|paddr|parms|realloc|rem|replace|subst|scan|seconds|shtdn|size|sfile|sqrt|status|str|str|str|subdt|this|time|timestamp|tlookup|trim|triml|trimr|ucs2|uns|unsh|xfoot|xlate|years)\b</string>
 			<key>name</key>
 			<string>constant.language.figurative.rpg</string>
 		</dict>
@@ -114,6 +114,30 @@
 			<string>constant.language.rpg</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>highlight function key indicatiors</string>
+			<key>match</key>
+			<string>(?i)[*](inka|inkb|inkc|inkd|inke|inkf|inkg|inkh|inki|inkj|inkk|inkl)\b</string>
+			<key>name</key>
+			<string>constant.language.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>highlight number indicatiors</string>
+			<key>match</key>
+			<string>(?i)[*][i][n][0-9][0-9]\b</string>
+			<key>name</key>
+			<string>constant.language.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>highlight common indicatiors</string>
+			<key>match</key>
+			<string>(?i)[*](inlr)\b</string>
+			<key>name</key>
+			<string>constant.language.rpg</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\%\&gt;</string>
 			<key>end</key>
@@ -122,6 +146,30 @@
 			<string>storage.type.rpg</string>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>(^(?i)[\*][\*](free))</string>
+			<key>name</key>
+			<string>constant.language.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>color the spec letters in col 6 turquoise</string>
+			<key>match</key>
+			<string>(^(?i)[0-9\s][0-9\s][0-9\s][0-9\s][0-9\s][(c|d|f|h|i|o)])</string>
+			<key>name</key>
+			<string>support.type.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>color the spec letters in col 1 turquoise</string>
+			<key>match</key>
+			<string>(^(?i)[(c|d|f|h|i|o)])</string>
+			<key>name</key>
+			<string>support.type.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>block comments</string>
 			<key>begin</key>
 			<string>\/\*</string>
 			<key>end</key>
@@ -129,20 +177,25 @@
 			<key>name</key>
 			<string>comment.block.rpg</string>
 		</dict>
-
-
 		<dict>
+			<key>comment</key>
+			<string>comments lines with * on position 7</string>
 			<key>match</key>
-			<string>(^[0-9 a-zA-Z\*\-][0-9 a-zA-Z\\*\-][0-9 a-zA-Z\*\-][0-9 a-zA-Z\*\-][0-9 a-zA-Z\*\-][0-9 a-zA-Z\*\-][\*/].*$)</string>
+			<string>(^[0-9\s][0-9\s][0-9\s][0-9\s][0-9\s][0-9 a-zA-Z\*\-][\*].*$)</string>
 			<key>name</key>
 			<string>comment.line.set.rpg</string>
 		</dict>
 		<dict>
+			<key>comment</key>
+			<string>comments lines with * on position 2</string>
 			<key>match</key>
-			<string>(^[0-9 a-zA-Z\*\-][\*/].*$)</string>
+			<string>(^[0-9 a-zA-Z\*\-][\*].*$)</string>
 			<key>name</key>
 			<string>comment.line.set.rpg</string>
 		</dict>
+
+
+
 
 		<dict>
 			<key>begin</key>
