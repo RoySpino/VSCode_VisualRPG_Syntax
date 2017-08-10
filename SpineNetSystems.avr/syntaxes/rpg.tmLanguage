@@ -22,6 +22,22 @@
 	<key>patterns</key>
 	<array>
 		<dict>
+			<key>comment</key>
+			<string>comments lines with * on position 7</string>
+			<key>match</key>
+			<string>(^[0-9 \s][0-9 \s][0-9 \s][0-9 \s][0-9 \s][0-9 a-zA-Z\*\-\s][\*].*$)</string>
+			<key>name</key>
+			<string>comment.line.set.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>comments lines with * on position 2</string>
+			<key>match</key>
+			<string>(^[0-9 a-zA-Z\*\-\s][\*].*$)</string>
+			<key>name</key>
+			<string>comment.line.set.rpg</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>(?i)\b(ctl-opt)\b</string>
 			<key>end</key>
@@ -117,7 +133,7 @@
 			<key>comment</key>
 			<string>highlight function key indicatiors</string>
 			<key>match</key>
-			<string>(?i)[*](inka|inkb|inkc|inkd|inke|inkf|inkg|inkh|inki|inkj|inkk|inkl| inkm|inkn|inko|inkp|inkq|inkr|inks|inkt|inku|inkv|inkw|inkx)\b</string>
+			<string>(?i)[*](inka|inkb|inkc|inkd|inke|inkf|inkg|inkh|inki|inkj|inkk|inkl|inkm|inkn|inko|inkp|inkq|inkr|inks|inkt|inku|inkv|inkw|inkx)\b</string>
 			<key>name</key>
 			<string>constant.language.rpg</string>
 		</dict>
@@ -155,7 +171,7 @@
 			<key>comment</key>
 			<string>color the spec letters in col 6 turquoise</string>
 			<key>match</key>
-			<string>(^(?i)[0-9\s][0-9\s][0-9\s][0-9\s][0-9\s][(c|d|f|h|i|o)])</string>
+			<string>(^(?i)[0-9\s][0-9\s][0-9\s][0-9\s][0-9\s][(c|d|f|h|i|o|p)])</string>
 			<key>name</key>
 			<string>support.type.rpg</string>
 		</dict>
@@ -163,7 +179,7 @@
 			<key>comment</key>
 			<string>color the spec letters in col 1 turquoise</string>
 			<key>match</key>
-			<string>(^(?i)[(c|d|f|h|i|o)])</string>
+			<string>(^(?i)[(c|d|f|h|i|o|p)])</string>
 			<key>name</key>
 			<string>support.type.rpg</string>
 		</dict>
@@ -176,22 +192,6 @@
 			<string>\*\/</string>
 			<key>name</key>
 			<string>comment.block.rpg</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>comments lines with * on position 7</string>
-			<key>match</key>
-			<string>(^[0-9\s][0-9\s][0-9\s][0-9\s][0-9\s][0-9 a-zA-Z\*\-][\*].*$)</string>
-			<key>name</key>
-			<string>comment.line.set.rpg</string>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string>comments lines with * on position 2</string>
-			<key>match</key>
-			<string>(^[0-9 a-zA-Z\*\-][\*].*$)</string>
-			<key>name</key>
-			<string>comment.line.set.rpg</string>
 		</dict>
 
 
@@ -207,6 +207,21 @@
 		</dict>
 		<dict>
 			<key>begin</key>
+			<string>(?i)^[ \t]*(exec)\s+(sql)\b</string>
+			<key>end</key>
+			<string>\;</string>
+			<key>name</key>
+			<string>support.constant.rpg</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>SQL</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
 			<string>\'</string>
 			<key>end</key>
 			<string>\'</string>
@@ -219,21 +234,6 @@
 					<string>\.</string>
 					<key>name</key>
 					<string>constant.character.escape.rpg</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>(?i)^[ \t]*(exec)\s+(sql)\b</string>
-			<key>end</key>
-			<string>\;</string>
-			<key>name</key>
-			<string>support.constant.rpg</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>SQL</string>
 				</dict>
 			</array>
 		</dict>
