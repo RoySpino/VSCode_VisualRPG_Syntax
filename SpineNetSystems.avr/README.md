@@ -7,6 +7,8 @@ provide support for both structured and free form RPG.
 I also wanted add support for ASNA Visual RPG mostly because no 
 one has bothered to add that extension yet.
 
+Extension is on  [GitHub](https://github.com/RoySpino/VSCode_VisualRPG_Syntax), contributors are welcome.
+
 As for the meaning of the first R in R-RPG. it could mean Revised,
 Revision, Reimagined or Roy's RPG take your pick.
 
