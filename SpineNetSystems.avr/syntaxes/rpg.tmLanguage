@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -21,6 +22,12 @@
 	<string>rpg RPG</string>
 	<key>patterns</key>
 	<array>
+		<dict>
+			<key>match</key>
+			<string>(^(?i)[\*][\*](free))</string>
+			<key>name</key>
+			<string>constant.language.rpg</string>
+		</dict>
 		<dict>
 			<key>comment</key>
 			<string>comments lines with * on position 7</string>
@@ -160,12 +167,6 @@
 			<string>\&lt;\%</string>
 			<key>name</key>
 			<string>storage.type.rpg</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(^(?i)[\*][\*](free))</string>
-			<key>name</key>
-			<string>constant.language.rpg</string>
 		</dict>
 		<dict>
 			<key>comment</key>
