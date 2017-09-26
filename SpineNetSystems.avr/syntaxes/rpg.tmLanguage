@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -62,15 +61,15 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>(?i)\b(c/EXEC SQL)\b</string>
+			<string>(?i)\b([c][/][E][X][E][C][ ][S][Q][L])\b</string>
 			<key>end</key>
-			<string>(?i)\b(c/END-EXEC)\b</string>
+			<string>(?i)\b([c][/][E][N][D][-][E][X][E][C])\b</string>
 			<key>name</key>
 			<string>invalid.illegal.rpg</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(for|if|ifeq|ifge|ifgt|ifle|iflt|ifne|do|dow|dou|select|begsr|endsr|endif|endmon|endsl|enddo|endfor|monitor|on-error|wheneq|whenne|whenlt|whengt)\b</string>
+			<string>(?i)\b(for|if|ifeq|ifge|ifgt|ifle|iflt|ifne|do|dow|dou|select|begsr|endsr|endif|endmon|endsl|enddo|endfor|extpgm|keyed|monitor|on-error|sfile|usage|wheneq|whenne|whenlt|whengt)\b</string>
 			<key>name</key>
 			<string>keyword.control.rpg</string>
 		</dict>
@@ -82,7 +81,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)\b(inz|workstn|disk|dim|usropn|rename)\b</string>
+			<string>(?i)\b(disk|dim|inz|rename|usropn|workstn|value)\b</string>
 			<key>name</key>
 			<string>keyword.control.rpg</string>
 		</dict>
@@ -94,7 +93,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)[\%](abs|addr|alloc|bitand|bitnot|bitor|bitxor|char|check|checkr|date|days|dec|dech|decpos|diff|div|editc|editflt|editw|elem|eof|equal|error|fields|float|found|graph|hours|int|inth|kds|len|lookup|minutes|months|mseconds|nullind|occur|open|paddr|paddr|parms|realloc|rem|replace|subst|scan|seconds|shtdn|size|sfile|sqrt|status|str|str|str|subdt|this|time|timestamp|tlookup|trim|triml|trimr|ucs2|uns|unsh|xfoot|xlate|years)\b</string>
+			<string>(?i)[\%](abs|addr|alloc|bitand|bitnot|bitor|bitxor|char|check|checkr|date|days|dec|dech|decpos|diff|div|editc|editflt|editw|elem|eof|equal|error|fields|float|found|graph|hours|int|inth|kds|len|lookup|minutes|months|mseconds|nullind|occur|open|paddr|parms|realloc|rem|replace|subst|scan|scanrpl|seconds|shtdn|size|sfile|sqrt|status|str|subdt|subst|this|time|timestamp|tlookup|trim|triml|trimr|ucs2|uns|unsh|xfoot|xlate|years)\b</string>
 			<key>name</key>
 			<string>constant.language.figurative.rpg</string>
 		</dict>
@@ -132,7 +131,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>(?i)[*](ON|OFF|ENTRY|ALL|BLANK|BLANKS|ZERO|ZEROS|HIVAL|LOVAL|PROC|USRCTL)\b</string>
+			<string>(?i)[*](ALL|BLANK|BLANKS|CURRENT|D|DAYS|DELETE|DMY|DMY|DMYY|DMYY|DOS|DTS|DTS|ENTRY|H|HIVAL|HOURS|INPUT|JOB|JOB|JUL|JUL|LONGJUL|LONGJUL|LOVAL|M|MDY|MDY|MDYY|MDYY|MINUTES|MN|MONTHS|MS|MSECONDS|N|OFF|ON|OUTPUT|PROC|S|SECONDS|SYS|SYSVAL|SYSVAL|UPDATE|USRCTL|Y|YEARS|YMD|YMD|YYMD|YYMD|ZERO|ZEROS)\b</string>
 			<key>name</key>
 			<string>constant.language.rpg</string>
 		</dict>
@@ -167,6 +166,14 @@
 			<string>\&lt;\%</string>
 			<key>name</key>
 			<string>storage.type.rpg</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>color the freeform variable types turquoise</string>
+			<key>match</key>
+			<string>(?i)\b(binary|char|date|graph|float|ind|int|packed|pointer|procedure|time|timestamp|uns|ucs2|varchar|vargraph|varucs2|zoned)\b</string>
+			<key>name</key>
+			<string>support.type.rpg</string>
 		</dict>
 		<dict>
 			<key>comment</key>
